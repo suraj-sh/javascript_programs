@@ -1,0 +1,16 @@
+2.6 Explain the process of combining strings together in JavaScript.
+
+->  In JavaScript, you can combine (concatenate) strings together using the `+` operator. 
+    Here's a simple process:
+
+    1. Create Strings: Have the strings you want to combine ready.
+
+        var firstName = "Suraj";
+        var lastName = "Sharma";
+
+
+    2. Combine Strings: Use the `+` operator to join them together.
+
+        var fullName = firstName + " " + lastName;
+
+    Now, `fullName` contains the combined string: "Suraj Sharma".

@@ -1,0 +1,19 @@
+2.7 Provide further details on working with strings.
+
+->  The `String.prototype.link()` method in JavaScript is used to create a hyperlink 
+    (an HTML `<a>` element) from a given string, with the specified URL as its `href` attribute. 
+    Here's a simple explanation:
+
+    1. Syntax: Use the `link()` method on a string and provide the URL as an argument.
+
+        var myString = "Click here for more info!";
+        var linkedString = myString.link("https://www.example.com");
+        
+
+    2. Result: `linkedString` will contain an HTML link like this:
+    
+        <a href="https://www.example.com">Click here for more info!</a>
+    
+
+    The `link()` method can be useful when you want to dynamically generate hyperlinks within 
+    your JavaScript code.

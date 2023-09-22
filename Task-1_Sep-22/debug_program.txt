@@ -1,0 +1,28 @@
+1.9 Take a JavaScript program with a bug and debug it using the console.
+
+        alert("Let's Begin The Challenge!");
+
+        document.write("Congrats You Fixed This Line Of Code!";
+
+
+        Console.lo("Good Job Your Almost There!");
+
+        Console.log("If this appears in the console then you have completed the challenge, Well Done!")
+
+
+->  Corrected JavaScript code with debugging using the console:
+
+        alert("Let's Begin The Challenge!");
+
+        document.write("Congrats You Fixed This Line Of Code!");
+
+        console.log("Good Job You're Almost There!");
+
+        console.log("If this appears in the console, then you have completed the challenge. Well Done!");
+
+
+    1. Added a missing closing parenthesis for the `document.write` statement.
+    2. Corrected capitalization for `console.log` to make it `console.log` for both lines.
+    3. Fixed grammar in the second `console.log` message.
+
+    Now, the code should work as expected and display messages in the console without any errors.

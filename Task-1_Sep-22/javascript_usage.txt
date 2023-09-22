@@ -1,0 +1,23 @@
+1.4 Define what JavaScript is and provide live examples of its usage on the web.
+
+->  JavaScript is a web programming language that adds interactivity to websites. 
+    Here are simple examples of its use:
+
+    1. Alert Box: Display an alert when a button is clicked.
+
+        <button onclick="alert('Hello, World!')">Click Me</button>
+
+
+    2. Changing Text: Change text on a webpage with a button click.
+
+        <p id="demo">Hello, World!</p>
+        <button onclick="document.getElementById('demo').innerHTML = 'Clicked!';">Click Me</button>
+
+
+    3. Image Swap: Change an image when a button is clicked.
+
+        <img id="myImage" src="image1.jpg">
+        <button onclick="document.getElementById('myImage').src = 'image2.jpg';">Change Image</button>
+
+
+    These examples illustrate JavaScript's ability to make websites more interactive and dynamic.

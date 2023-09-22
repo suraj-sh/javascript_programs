@@ -1,0 +1,27 @@
+2.8 Present a coding challenge related to variables.
+
+    Welcome the user to the page via an alert box
+    Ask user for their name and favorite color
+    Combine them both in a string that says "Hello {username} Your Favourite color is {fav color}" 
+    and write it to the document
+    Output "program complete" to the console to let us know that the script has run successfully without errors.
+    
+
+2.9 Share the solution to the variable coding challenge.
+
+->  // Step 1: Welcome the user via an alert
+    alert("Welcome to the Page!");
+
+    // Step 2: Ask for the user's name and favorite color
+    var userName = prompt("Please enter your name:");
+    var favColor = prompt("Please enter your favorite color:");
+
+    // Step 3: Combine the user's name and favorite color in a string
+    var message = "Hello " + userName + " Your favorite color is " + favColor;
+
+    // Step 4: Write the message to the document
+    document.write(message);
+
+    // Step 5: Output "program complete" to the console
+    console.log("Program complete");
+  

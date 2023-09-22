@@ -1,0 +1,24 @@
+2.2 Define a variable and explain its role in programming.
+
+->  A variable is a named storage location in programming used to hold and manage data. 
+    Its role is to store and represent information such as numbers, text, or objects 
+    so that you can manipulate, retrieve, and use that data in your program. 
+    Variables make it possible to work with dynamic and changing data, allowing programs 
+    to perform calculations, make decisions, and respond to user input effectively.
+
+    Example of a variable in JavaScript:
+
+        var age = 23;
+
+    In this example:
+
+    - `var` is the keyword used to declare a variable.
+    - `age` is the variable name.
+    - `30` is the data stored in the variable.
+
+    You can now use the `age` variable to perform various operations or display it in your program. 
+    For instance:
+
+        console.log("I am " + age + " years old.");
+
+    This code would output: "I am 30 years old."

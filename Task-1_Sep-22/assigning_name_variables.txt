@@ -1,0 +1,21 @@
+2.3 Describe how to assign names to your variables.
+
+->  To assign names to your variables:
+
+    1. Choose a Descriptive Name: Pick a name that reflects the purpose or content of the variable. 
+                                  Use meaningful words.
+
+    2. Follow Naming Rules: Variable names can contain letters, digits, underscores, or dollar signs. 
+                            They must start with a letter, underscore, or dollar sign.
+
+    3. Avoid Reserved Words: Don't use reserved words (e.g., "if," "function") as variable names.
+
+    Examples of valid variable names:
+    - `userName`
+    - `totalAmount`
+    - `_privateVar`
+
+    Examples of invalid variable names:
+    - `123abc` (starts with a digit)
+    - `if` (uses a reserved word)
+    - `my-variable` (contains a hyphen, which is not allowed)   

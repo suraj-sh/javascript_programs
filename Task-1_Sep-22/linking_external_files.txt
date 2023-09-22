@@ -1,0 +1,22 @@
+1.7 Describe the process of linking an external JavaScript file from an HTML document.
+
+->  To link an external JavaScript file from an HTML document:
+
+    1. Create the JavaScript File: First, create a separate JavaScript file (e.g., `script.js`) 
+                                   with your JavaScript code.
+
+    2. Include the `<script>` Tag: Inside your HTML document, within the `<head>` or at the end of 
+                              the `<body>` section, add the `<script>` tag with the `src` attribute 
+                              pointing to your JavaScript file.
+
+        <script src="script.js"></script>
+
+    3. Save Both Files: Ensure both the HTML and JavaScript files are saved in the same directory 
+                        or provide the correct file path in the `src` attribute if they are in different 
+                        directories.
+
+    4. Load the HTML Document: Open your HTML document in a web browser. The external JavaScript file 
+                               will be automatically loaded and executed.
+
+    This process allows you to separate your HTML and JavaScript code, making your code more organized 
+    and maintainable.

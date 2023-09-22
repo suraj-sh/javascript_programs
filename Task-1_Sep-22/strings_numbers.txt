@@ -1,0 +1,14 @@
+2.4 Introduce the concepts of strings and numbers in JavaScript.
+
+->  In JavaScript:
+
+    1. Strings: Strings are sequences of characters (like text) enclosed in 
+                single (' ') or double (" ") quotes. 
+                Example: `"Hello, World!"`.
+
+    2. Numbers: Numbers represent numeric values, either integers (whole numbers) 
+                or decimals (floating-point numbers). 
+                Example: `42` or `3.14`.
+
+    You can use strings for text and numbers for mathematical operations or calculations 
+    in your JavaScript programs.

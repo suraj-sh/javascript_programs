@@ -1,0 +1,3 @@
+1.1 What topics will you be covering throughout this JavaScript course?
+
+->  Syntax, and all kinds of strings, variables, statements, html etc.

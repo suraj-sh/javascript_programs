@@ -1,0 +1,32 @@
+1.2 Explain the process of creating your first JavaScript program.
+
+->  Creating your first JavaScript program involves these basic steps:
+
+    1. Set Up: Open a text editor like Notepad, VS Code, or a code editor of your choice.
+
+    2. Write HTML: Create an HTML file (e.g., index.html) and add a `<script>` tag inside 
+                   the `<body>` or `<head>` section to link to your JavaScript file.
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>My First JavaScript Program</title>
+        </head>
+        <body>
+            <script src="myscript.js"></script>
+        </body>
+        </html>
+
+    3. Create JavaScript File: Create a JavaScript file (e.g., myscript.js) in the same directory 
+                               as your HTML file.
+
+    4. Write JavaScript Code: Inside your JavaScript file, write your JavaScript code.
+
+        // myscript.js
+        alert("Hello, World!");
+
+    5. Run the Program: Open your HTML file in a web browser (e.g., Chrome, Firefox) by double-clicking 
+                        it or right-clicking and selecting "Open with..." your preferred browser.
+
+    6. View Output: You will see an alert dialog with the message "Hello, World!" displayed 
+                    in your web browser.

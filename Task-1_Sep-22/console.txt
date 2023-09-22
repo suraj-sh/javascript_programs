@@ -1,0 +1,15 @@
+1.8 Explain the purpose of the JavaScript console.
+
+->  The JavaScript console is a tool used for debugging and testing JavaScript code in a web browser. 
+    It allows developers to:
+
+    1. View Output: See the output of their code, like log messages and errors.
+
+    2. Inspect Variables: Check the values of variables during program execution.
+
+    3. Debug Errors: Identify and fix code errors or issues.
+
+    4. Interact with the Page: Execute JavaScript commands directly in the browser for testing.
+
+    The console is a valuable tool for developers to ensure their JavaScript code runs smoothly and 
+    to diagnose and resolve issues effectively.

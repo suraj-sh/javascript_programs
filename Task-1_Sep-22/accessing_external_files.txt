@@ -1,0 +1,11 @@
+1.5 How can you access the external files for each lesson of this course?
+
+->  To access external files for each lesson of a course:
+
+    1. Check Course Resources: Look for a "Resources" or "Files" section within the course materials.
+
+    2. Download Links: Click on the provided download links to access and download the external 
+                       files associated with each lesson.
+
+    3. Follow Instructions: Follow any specific instructions given in the course content to 
+                            access or use these external files effectively.

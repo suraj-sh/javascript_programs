@@ -1,0 +1,16 @@
+3.2 Describe how mathematical calculations are performed in JavaScript.
+
+->  Mathematical calculations in JavaScript are performed using mathematical operators like 
+    `+` (addition), `-` (subtraction), `*` (multiplication), `/` (division), and `%` (modulo for remainder). 
+    
+    You can use these operators between numbers to perform calculations like:
+
+        var result = 5 + 3; // Addition: result will be 8
+        var difference = 10 - 7; // Subtraction: difference will be 3
+        var product = 4 * 6; // Multiplication: product will be 24
+        var quotient = 20 / 5; // Division: quotient will be 4
+        var remainder = 17 % 4; // Modulo (remainder): remainder will be 1
+
+
+    These operators allow you to perform various mathematical operations and are essential for 
+    numerical computations in JavaScript.

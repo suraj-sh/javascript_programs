@@ -1,0 +1,21 @@
+1.6 What is a variable in JavaScript and how is it used?
+
+->  A variable in JavaScript is like a container that holds data. 
+    It can store various types of information, such as numbers, text, or objects. 
+    Variables are used to store and manage data in your code.
+
+    Usage:
+
+    1. Declaration: You declare a variable using `var`, `let`, or `const`.
+
+        var age = 25; // Declaration and initialization
+
+    2. Assignment: You can change the value stored in a variable.
+
+        age = 26; // Reassignment
+
+    3. Usage: You can use the variable in your code, like in calculations or displaying information.
+
+        console.log("Age is: " + age);
+
+    Variables are essential for storing and manipulating data in JavaScript programs.

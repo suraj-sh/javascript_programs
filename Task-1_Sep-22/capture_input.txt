@@ -1,0 +1,16 @@
+2.5 Show how to capture input from a visitor using JavaScript.
+
+->  To capture input from a visitor using JavaScript:
+
+    1. Create an HTML Input Field: Add an input element in your HTML code where the visitor 
+                                   can enter data, like text or numbers.
+
+        <input type="text" id="userInput">
+
+    2. Use JavaScript: In your JavaScript code, you can capture the input by referencing 
+                       the input element's ID and extracting its value.
+
+        var userInput = document.getElementById("userInput").value;
+
+    Now, `userInput` holds the value entered by the visitor, which you can use in your 
+    JavaScript program for processing or displaying purposes.

@@ -1,0 +1,14 @@
+3.1 Define numbers in the context of JavaScript.
+
+->  In the context of JavaScript, "numbers" refer to numeric data types used to represent 
+    both whole numbers (integers) and numbers with decimal points (floating-point numbers). 
+    Numbers in JavaScript are used for mathematical calculations, comparisons, and various 
+    numeric operations within programs. 
+    
+    Here are examples of JavaScript numbers:
+
+    - Integer: `42`
+    - Floating-point: `3.14`
+
+    JavaScript provides a range of functions and operators for working with numbers, 
+    making it a versatile language for mathematical operations and numeric data manipulation.

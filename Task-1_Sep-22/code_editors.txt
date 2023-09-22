@@ -1,0 +1,20 @@
+1.3 List a few examples of text editors that are suitable for coding.
+
+->  Text editors suitable for coding:
+
+    1. Visual Studio Code (VS Code): A highly customizable and feature-rich code 
+                                     editor developed by Microsoft.
+
+    2. Sublime Text: A lightweight and fast text editor with a wide range of plugins and themes.
+
+    3. Atom: An open-source, hackable text editor created by GitHub, known for its extensibility.
+
+    4. Notepad++: A Windows-based code editor with a focus on speed and efficiency.
+
+    5. Vim: A powerful and highly customizable text editor favored by experienced developers.
+
+    6. Emacs: Another highly extensible and customizable text editor with a long history in the 
+              developer community.
+
+    These text editors offer various features and are popular choices among programmers, 
+    depending on individual preferences and requirements.

@@ -1,0 +1,19 @@
+3.4 Explain how to use the Math object in JavaScript.
+
+->  To use the `Math` object in JavaScript:
+
+    1. Access Math Methods: Simply reference the `Math` object followed by a dot `.` 
+                            and the method you want to use.
+
+        var randomNumber = Math.random(); // Generate a random number between 0 and 1
+    
+
+    2. Example Methods:
+        - `Math.random()`: Generates a random number between 0 (inclusive) and 1 (exclusive).
+        - `Math.round()`: Rounds a number to the nearest integer.
+        - `Math.floor()`: Rounds a number down to the nearest integer.
+        - `Math.ceil()`: Rounds a number up to the nearest integer.
+        - `Math.max()` and `Math.min()`: Find the maximum and minimum values in a set of numbers.
+
+    The `Math` object provides a range of built-in mathematical functions and constants to perform 
+    various calculations in JavaScript.

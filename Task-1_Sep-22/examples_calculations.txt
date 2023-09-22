@@ -1,0 +1,36 @@
+3.3 Walk through examples of working with numbers and calculations.
+
+->  Examples of working with numbers and calculations in JavaScript:
+
+    1. Basic Arithmetic:
+    
+        var a = 5;
+        var b = 3;
+
+        var sum = a + b; // Addition: sum is 8
+        var difference = a - b; // Subtraction: difference is 2
+        var product = a * b; // Multiplication: product is 15
+        var quotient = a / b; // Division: quotient is 1.6667
+    
+
+    2. Increment and Decrement:
+   
+        var count = 10;
+        count++; // Increment: count is now 11
+        count--; // Decrement: count is back to 10
+    
+
+    3. Modulo (Remainder):
+
+        var remainder = 17 % 4; // Modulo (remainder): remainder is 1
+    
+
+    4. Math Object:
+
+    JavaScript provides a `Math` object with various methods for more complex calculations:
+
+        var radius = 5;
+        var area = Math.PI * Math.pow(radius, 2); // Calculate the area of a circle
+    
+
+    These examples demonstrate common numeric operations and calculations you can perform in JavaScript.

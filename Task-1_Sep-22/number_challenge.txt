@@ -1,0 +1,29 @@
+3.5 Present a challenge related to numbers in JavaScript.
+
+    Create a program that generates a random number between 1 and what the user inputs the second number. 
+    Make sure that the number is an integer (whole number). 
+    Write the randomly generated number to the document so that the user can see the final result
+
+3.6 Provide the solution to the numbers challenge.
+
+->  <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Random Number Generator</title>
+    </head>
+    <body>
+        <h1>Random Number Generator</h1>
+        <label for="upperLimit">Enter an upper limit: </label>
+        <input type="number" id="upperLimit">
+        <button onclick="generateRandomNumber()">Generate Random Number</button>
+        <p id="result"></p>
+
+        <script>
+            function generateRandomNumber() {
+                var upperLimit = parseInt(document.getElementById("upperLimit").value);
+                var randomNumber = Math.floor(Math.random() * upperLimit) + 1;
+                document.getElementById("result").textContent = "Random Number: " + randomNumber;
+            }
+        </script>
+    </body>
+    </html>
