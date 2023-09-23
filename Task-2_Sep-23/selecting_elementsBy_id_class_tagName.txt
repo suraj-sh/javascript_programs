@@ -1,0 +1,21 @@
+4.2 Explain how to select elements using their IDs, classes, and tag names.
+
+->  Selecting elements using their IDs, classes, and tag names with query selectors in JavaScript:
+
+    1. Select by ID (using `#`):
+    
+        var elementById = document.querySelector("#elementId");
+         
+
+    2. Select by Class (using `.`):
+    
+        var elementsByClass = document.querySelectorAll(".className");
+    
+
+    3. Select by Tag Name:
+    
+        var elementsByTagName = document.getElementsByTagName("tagname");
+    
+
+    Replace `elementId`, `className`, and `tagname` with the specific ID, class, 
+    or tag name you want to select.

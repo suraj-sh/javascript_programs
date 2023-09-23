@@ -1,0 +1,15 @@
+2.2 Explain the concept of data types and provide examples.
+
+->  In JavaScript, data types define the kind of data that a variable can hold. 
+
+    number: Represents numeric values.
+    string: Represents text or characters.
+    boolean: Represents true or false values.
+    undefined: Represents a variable that has been declared but not assigned a value.
+    null: Represents the absence of a value.
+
+    var age = 23; // number
+    var name = "Suraj"; // string
+    var isStudent = true; // boolean
+    var score; // undefined
+    var noValue = null; // null

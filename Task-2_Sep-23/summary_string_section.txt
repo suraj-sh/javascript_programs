@@ -1,0 +1,15 @@
+2.6 Summarize the content covered in the "String Manipulation" section.
+
+->  In the "String Manipulation" section:
+
+    1. String Concatenation: You can combine strings using the `+` operator or the `concat()` method.
+
+    2. String Methods: Methods like `toUpperCase()`, `toLowerCase()`, and `length()` help transform 
+                       and manipulate strings.
+
+    3. Extracting Substrings: Use `substring()` or square brackets `[]` to extract portions of a string.
+
+    4. Finding Characters: The `indexOf()` method locates the position of a character in a string.
+
+    5. String Interpolation: String interpolation with template literals allows you to embed variables 
+                             or expressions within strings for dynamic content.

@@ -1,0 +1,28 @@
+2.7 What was the project presented in this section, and what did it involve?
+
+    Converting a text to a url:
+    Website name we can use : "https://www.google.com"
+    Declare a string as str and name of url
+    Turn the str into lowercase
+    Use 'split' to split the contents pf string
+    Use 'join' to concatenate with '-' hyphen
+    Url should look like "https://website.com/your-url-in-here"
+
+
+2.8 Share the solution to the project from this section.
+
+->  // Website name
+    var websiteName = "https://www.google.com/";
+
+    // Declare a string and turn it into lowercase
+    var str = "Suraj Sharma Linkedin";
+    str = str.toLowerCase();
+
+    // Split the string and join with hyphens
+    var urlParts = str.split(' ');
+    var joinedUrl = urlParts.join('-');
+
+    // Construct the final URL
+    var finalUrl = websiteName + joinedUrl;
+
+    console.log(finalUrl);  // prints "https://www.google.com/suraj-sharma-linkedin"

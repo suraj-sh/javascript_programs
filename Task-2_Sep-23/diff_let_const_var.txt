@@ -1,0 +1,9 @@
+2.3 Describe the difference between let, const, and var when declaring variables.
+
+->  - `let`: Declares a variable with block-level scope that can be reassigned. 
+             It's commonly used for variables that may change.
+    - `const`: Declares a variable with block-level scope that cannot be reassigned 
+               after initialization. Use it for values that should remain constant.
+    - `var`: Declares a variable with function-level scope (or global if not inside a function) 
+             that can be reassigned. It's considered outdated and can lead to unexpected behavior 
+             due to its lack of block-level scope. Use `let` or `const` instead for modern JavaScript.

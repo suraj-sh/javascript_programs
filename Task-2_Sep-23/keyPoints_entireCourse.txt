@@ -1,0 +1,21 @@
+5.2 What key points should you remember from the entire course?
+
+->  Key points to remember:
+
+    1. JavaScript is a versatile programming language used for web development and more.
+
+    2. Variables store data, and you can declare them using `var`, `let`, or `const`.
+
+    3. Data types include numbers, strings, booleans, objects, arrays, and more.
+
+    4. Basic operators perform actions like arithmetic, comparison, and logical operations.
+
+    5. `if/else` statements are used for decision-making based on conditions.
+
+    6. Functions are reusable code blocks with parameters and return values.
+
+    7. Query selectors in JavaScript select and manipulate HTML elements in web pages.
+
+    8. Function parameters are inputs, and return values are outputs of a function.
+
+    These concepts form the foundation of JavaScript programming.

@@ -1,0 +1,20 @@
+3.2 Describe how you can concatenate strings in JavaScript.
+
+->  In JavaScript, you can concatenate (combine) strings using the `+` 
+    operator or the `concat()` method.
+
+    Using `+` operator:
+
+        var firstName = "Suraj";
+        var lastName = "Sharma";
+        var fullName = firstName + " " + lastName; // Concatenation with the + operator
+
+
+    Using `concat()` method:
+
+        var firstName = "Suraj";
+        var lastName = "Sharma";
+        var fullName = firstName.concat(" ", lastName); // Concatenation with the concat() method
+
+
+    Both methods achieve the same result, which is combining two or more strings into one.

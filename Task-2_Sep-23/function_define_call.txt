@@ -1,0 +1,19 @@
+4.4 Provide examples of how to define and call functions.
+
+->  Examples of how to define and call functions in JavaScript:
+
+    Defining a Function:
+    
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+    
+
+    Calling a Function:
+    
+        greet("Alice"); // Output: "Hello, Alice!"
+        greet("Bob");   // Output: "Hello, Bob!"
+    
+
+    In this example, we define a function called `greet` that takes a `name` parameter. 
+    We then call the function with different names as arguments to produce personalized greetings.

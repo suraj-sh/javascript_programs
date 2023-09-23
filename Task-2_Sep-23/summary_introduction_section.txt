@@ -1,0 +1,8 @@
+1.6 Provide a quick summary of the important points covered in the "Introduction" section.
+
+->  1. Basics of javascript
+    2. Code Examples
+    3. Assignments
+    4. Facebook group (for support)
+    5. Codepen.io  
+    6. Asking questions is important

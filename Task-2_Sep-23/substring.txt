@@ -1,0 +1,25 @@
+2.4 Provide examples of extracting substrings and finding characters within strings.
+
+->  Extracting Substrings:
+    You can extract a substring from a string using the `substring()` method or square brackets `[]`.
+
+    Example using `substring()`:
+
+        var text = "Hello, World!";
+        var sub = text.substring(0, 5); // Extracts "Hello"
+
+    Example using square brackets `[]`:
+
+        var text = "Hello, World!";
+        var sub = text[0]; // Gets the first character "H"
+
+
+    Finding Characters:
+    To find the position of a character within a string, use the `indexOf()` method.
+
+    Example:
+
+        var text = "Hello, World!";
+        var position = text.indexOf("W"); // Returns 7, the index of "W"
+
+    These methods help you manipulate and work with specific parts of strings in JavaScript.

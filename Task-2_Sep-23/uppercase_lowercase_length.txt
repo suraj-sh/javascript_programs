@@ -1,0 +1,10 @@
+2.3 Explain the usage of string methods like toUpperCase(), toLowerCase(), and length().
+
+->  - `toUpperCase()`: Converts a string to all uppercase letters.
+        Example: `"hello".toUpperCase()` returns "HELLO".
+
+    - `toLowerCase()`: Converts a string to all lowercase letters.
+        Example: `"WORLD".toLowerCase()` returns "world".
+
+    - `length()`: Returns the number of characters in a string.
+        Example: `"JavaScript".length` returns 10. 

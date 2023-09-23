@@ -1,0 +1,22 @@
+3.7 Demonstrate how to use if/else statements with user input.
+
+->  Using an `if/else` statement with user input in JavaScript:
+
+    // Get user input
+    var userInput = prompt("Enter your age:");
+
+    // Convert user input to a number
+    var age = parseInt(userInput);
+
+    // Check if the user is an adult
+    if (age >= 18) {
+        console.log("You are an adult.");
+    } 
+    else {
+        console.log("You are a minor.");
+    }
+
+    In this code, the `prompt` function collects the user's age as input. 
+    We use `parseInt` to convert the input to a number. Then, an `if/else` 
+    statement checks if the age is greater than or equal to 18 and displays 
+    the appropriate message based on the user's age.

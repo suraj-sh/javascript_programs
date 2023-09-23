@@ -1,0 +1,29 @@
+3.4 Describe comparison operators and their role in conditional statements.
+
+->  Comparison operators in JavaScript are used to compare values and determine 
+    the truth or falsity of a condition. They play a crucial role in conditional 
+    statements like `if`, `else if`, and `while`.
+
+    Common comparison operators include:
+        - `==` (equal to)
+        - `!=` (not equal to)
+        - `<` (less than)
+        - `>` (greater than)
+        - `<=` (less than or equal to)
+        - `>=` (greater than or equal to)
+
+    For example:
+    
+        var age = 20;
+
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } 
+        else {
+            console.log("You are a minor.");
+        }
+
+
+    In this code, the `>=` comparison operator is used in an `if` statement to check 
+    if the `age` variable is greater than or equal to 18, making decisions based on 
+    the result of the comparison.  

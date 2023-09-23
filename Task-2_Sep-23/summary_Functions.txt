@@ -1,0 +1,21 @@
+4.6 Summarize the introduction to functions and provide examples.
+
+->  Introduction to Functions:
+    Functions in JavaScript are reusable blocks of code that can accept inputs 
+    (parameters) and produce outputs (return values). They help organize and 
+    modularize code for better maintainability.
+
+    Example of Defining and Calling a Function:
+    
+        // Define a function
+        function addNumbers(a, b) {
+        return a + b;
+        }
+
+        // Call the function and store the result
+        var sum = addNumbers(5, 3); // sum is now 8
+
+
+    In this example, we define a function `addNumbers` that accepts two parameters 
+    (`a` and `b`) and returns their sum when called. We then call the function with 
+    arguments `5` and `3`, storing the result in the `sum` variable.

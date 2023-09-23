@@ -1,0 +1,11 @@
+4.5 Describe the concept of function parameters and return values.
+
+->  Function parameters are variables that allow you to pass values into a f
+    unction when it is called. They act as placeholders for the data the function 
+    needs to perform its task.
+
+    Return values are the values that a function can send back to the code that called it. 
+    They allow functions to provide results or information to the calling code.
+
+    In summary, function parameters are inputs, and return values are outputs, 
+    enabling functions to accept data and produce results.

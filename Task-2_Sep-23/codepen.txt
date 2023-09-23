@@ -1,0 +1,6 @@
+1.4 Explain the purpose of using CodePen.io.
+
+->  CodePen.io is a web platform used by developers and designers to create, 
+    share, and experiment with HTML, CSS, and JavaScript code in an interactive 
+    and collaborative environment. It serves as a playground for coding, prototyping, 
+    and showcasing web projects.

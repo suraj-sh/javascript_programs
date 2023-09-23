@@ -1,0 +1,15 @@
+2.5 How can you convert between different data types in JavaScript?
+
+->  You can convert between different data types in JavaScript using methods like:
+
+    1. String Conversion: Use `String()` or `toString()` functions to convert to a string.
+
+    2. Number Conversion: Use `Number()` or `parseInt()`/`parseFloat()` functions to convert 
+                          to a number.
+
+    3. Boolean Conversion: Use `Boolean()` to convert to a boolean.
+
+    4. Implicit Conversion: JavaScript may perform automatic type conversion in some situations, 
+                            like when using operators (+, ==) or functions that expect specific types.
+
+    Explicitly applying these conversion methods helps ensure data is in the desired format for your code.

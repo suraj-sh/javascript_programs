@@ -1,0 +1,6 @@
+4.3 What is the purpose of functions in JavaScript?
+
+->  The purpose of functions in JavaScript is to group and encapsulate 
+    a set of code statements into a reusable block. Functions enable you to organize, 
+    modularize, and efficiently manage code, making it easier to maintain and understand 
+    your JavaScript programs.

@@ -1,0 +1,17 @@
+3.2 How can you write single-line and multi-line comments in your code?
+
+->  To write comments:
+
+    Single-line comments start with `//` and are used for brief explanations on a single line.
+    
+        Example: 
+            `// This is a single-line comment.`
+
+    Multi-line comments begin with `/*` and end with `*/`. They are used for longer explanations 
+    spanning multiple lines.
+
+        Example:
+            /*
+                This is a
+                multi-line comment.
+            */

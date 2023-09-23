@@ -1,0 +1,28 @@
+3.3 Define basic operators and give examples of how they are used.
+
+->  Basic operators in JavaScript with examples:
+
+    1. Arithmetic Operators:
+        - Addition `+`: `5 + 3` equals `8`.
+        - Subtraction `-`: `10 - 2` equals `8`.
+        - Multiplication `*`: `4 * 6` equals `24`.
+        - Division `/`: `16 / 4` equals `4`.
+        - Modulus `%`: `17 % 5` equals `2` (remainder).
+
+    2. Comparison Operators:
+        - Equal to `==`: `5 == 5` is `true`.
+        - Not equal to `!=`: `7 != 3` is `true`.
+        - Greater than `>`: `10 > 5` is `true`.
+        - Less than `<`: `3 < 2` is `false`.
+
+    3. Logical Operators:
+        - Logical AND `&&`: `(true && false)` is `false`.
+        - Logical OR `||`: `(true || false)` is `true`.
+        - Logical NOT `!`: `!true` is `false`.
+
+    4. Assignment Operators:
+        - Assignment `=`: `x = 7` assigns the value `7` to variable `x`.
+        - Addition assignment `+=`: `y += 3` is equivalent to `y = y + 3`.
+
+    These operators are fundamental for performing calculations, making decisions, 
+    and manipulating data in JavaScript.

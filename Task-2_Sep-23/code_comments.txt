@@ -1,0 +1,5 @@
+3.1 Explain the purpose of code comments in JavaScript.
+
+->  Code comments in JavaScript serve the purpose of providing explanations, 
+    clarifications, and context within your code. They help developers understand 
+    how code works, why specific decisions were made, and make code maintenance easier.

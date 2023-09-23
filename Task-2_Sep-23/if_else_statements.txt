@@ -1,0 +1,24 @@
+3.6 What are the if/else statements used for, and how do they work?
+
+->  `if/else` statements are used in programming for making decisions based on conditions. 
+    They work by evaluating a condition (an expression that is either true or false) and 
+    executing different blocks of code depending on whether the condition is true or false.
+
+    `if` statement: Executes a block of code if the condition is true.
+    `else` statement: Executes a different block of code if the condition is false.
+
+        Example:
+
+        var age = 18;
+
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } 
+        else {
+            console.log("You are a minor.");
+        }
+
+    In this code, if the condition `age >= 18` is true, the first block of code is executed, 
+    and "You are an adult." is logged to the console. If the condition is false, 
+    the second block of code is executed, and "You are a minor." is logged. `if/else` 
+    statements help control the flow of your program based on specific conditions.

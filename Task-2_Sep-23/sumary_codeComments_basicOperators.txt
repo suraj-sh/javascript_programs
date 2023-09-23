@@ -1,0 +1,12 @@
+3.5 Summarize the content related to code comments and basic operators.
+
+->  Code Comments:
+        - Code comments provide explanations and context within your code.
+        - Single-line comments start with `//`, while multi-line comments use `/* */`.
+
+    Basic Operators:
+        - Basic operators in JavaScript perform operations on values.
+        - Examples include arithmetic operators (+, -, *, /), comparison operators (==, !=, >, <), 
+          logical operators (&&, ||, !), and assignment operators (=, +=, etc.).
+        - They are used for calculations, making decisions in conditional statements, 
+          and data manipulation.

@@ -1,0 +1,11 @@
+1.7 Where can you place your JavaScript code for execution?
+
+->  We can place our JavaScript code for execution in three main locations: 
+
+    1. Inline: Directly within an HTML file using the `<script>` tag.
+    2. Internal: Inside the `<script>` tag within the HTML document's `<head>` 
+                 or `<body>` section.
+    3. External: In a separate .js file linked to the HTML document using the 
+                 `<script>` tag's `src` attribute.
+
+    These locations determine when and how our JavaScript code runs on a web page.

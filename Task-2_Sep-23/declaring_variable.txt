@@ -1,0 +1,5 @@
+2.1 How can you declare a variable in JavaScript?
+
+->  Using 'var' keyword:
+    var name = "suraj";
+    var age = 23;

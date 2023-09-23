@@ -1,0 +1,14 @@
+2.5 Discuss the concept of string interpolation.
+
+->  String interpolation is a technique that allows you to embed variables or 
+    expressions within a string to create a new string. In JavaScript, 
+    you can achieve string interpolation using template literals (enclosed in backticks) 
+    and `${}` placeholders.
+
+    Example:
+
+        var name = "Suraj";
+        var greeting = `Hello, ${name}!`; // String interpolation
+
+    String interpolation makes it easier to create dynamic strings by seamlessly combining 
+    variables and text within a single string literal.

@@ -1,0 +1,18 @@
+2.4 What is variable scope in JavaScript, and how does it work?
+
+->  Variable scope in JavaScript determines where a variable can be accessed 
+    or used within your code:
+
+    1. Global Scope: Variables declared outside of any function have global scope 
+                     and can be accessed from anywhere in your code.
+
+    2. Function Scope: Variables declared within a function have function scope and 
+                       are only accessible within that function.
+
+    3. Block Scope (with `let` and `const`): Variables declared using `let` or `const` 
+                                             within a block (e.g., inside an `if` statement or loop) 
+                                             have block scope and are limited to that block.
+
+    Scope affects variable visibility and lifetime, helping prevent unintended variable modifications 
+    or conflicts. It follows the principle of "closer scope wins," meaning a variable declared in a 
+    narrower scope takes precedence over a variable with the same name in a wider scope.

@@ -1,0 +1,4 @@
+1.1 What is covered in the introduction section of this course?
+
+->  An overview of the entire course like what we'll be learning like,
+    basics of javascript.
