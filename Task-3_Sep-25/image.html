@@ -1,0 +1,37 @@
+<!-- Task 1: You have a web page with a button. When the button is clicked, 
+     a new image element should be added to the page. Write the JavaScript 
+     code to accomplish this using DOM manipulation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <button id="add-image-button">Add Image</button>
+
+    <script>
+        // Function to add a new image when the button is clicked
+        function addImage() {
+            // Create a new image element
+            const newImage = document.createElement('img');
+
+            // Set the source (URL) of the image
+            newImage.src = 'your_image_url_here.jpg'; // Replace with your image URL
+
+            // Set any additional attributes or styles for the image if needed
+            newImage.alt = 'Image Alt Text';
+            newImage.style.width = '200px';
+
+            // Append the new image to the body or any other desired element
+            document.body.appendChild(newImage);
+        }
+
+        // Add a click event listener to the button
+        const addButton = document.getElementById('add-image-button');
+        addButton.addEventListener('click', addImage);
+    </script>
+</body>
+</html>

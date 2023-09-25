@@ -1,0 +1,50 @@
+<!-- Task 2: You are tasked with creating a navigation menu that changes color when a user hovers over it. 
+             How would you use JavaScript to achieve this effect? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        /* Initial styles for menu items */
+        #menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Styles for menu item links */
+        #menu li a {
+            text-decoration: none;
+            color: #333; /* Initial text color */
+        }
+
+        /* Hover styles for menu item links */
+        #menu li a:hover {
+            color: #f00; /* Change the text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <script>
+        // Get references to the menu items
+        const menuItems = document.querySelectorAll('#menu li');
+
+        // Add a click event listener to each menu item
+        menuItems.forEach((menuItem) => {
+            menuItem.addEventListener('click', function () {
+                // Change the background color on click
+                this.style.backgroundColor = '#f00'; // Red background color
+            });
+        });
+    </script>
+</body>
+</html>

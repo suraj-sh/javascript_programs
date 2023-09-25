@@ -1,0 +1,8 @@
+4.1 Explain the concept of a dynamic grid on a web page and why it can be useful 
+    for creating responsive layouts.
+
+->  A dynamic grid on a web page is a layout structure that adjusts and reorganizes its 
+    content based on screen size and content changes. It's useful for creating responsive 
+    layouts because it ensures that content is displayed optimally on various devices and screen sizes, 
+    such as desktops, tablets, and smartphones. Dynamic grids help maintain a consistent and 
+    user-friendly design, improving the user experience by adapting to different viewing contexts.

@@ -1,0 +1,21 @@
+1.3 List some advantages of using a separate JavaScript file instead of embedding scripts directly 
+    into HTML documents.
+
+->  Advantages of using a separate JavaScript file instead of embedding scripts directly into 
+    HTML documents:
+
+    1. Modularity: Separation allows for cleaner code organization and easier maintenance.
+
+    2. Caching: JavaScript files can be cached by browsers, improving page load times for 
+                returning users.
+
+    3. Reusability: You can reuse the same JavaScript file across multiple HTML pages.
+
+    4. Readability: HTML remains clean and focused on content, while JavaScript is in its dedicated file.
+
+    5. Collaboration: Easier collaboration between front-end and back-end developers, 
+                      as they can work on their respective code separately.
+
+    6. Debugging: Debugging tools in browsers work more effectively with external JavaScript files.
+
+    7. Minification: External files can be minified for faster downloads, improving website performance.

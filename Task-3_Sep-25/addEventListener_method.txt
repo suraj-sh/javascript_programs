@@ -1,0 +1,8 @@
+3.1 Describe the role of the addEventListener method in the DOM and how it enables interactivity.
+
+->  The `addEventListener` method in the DOM allows you to specify a function (an event handler) 
+    to be executed when a specific event occurs on an HTML element. It enables interactivity 
+    by letting you respond to user actions like clicks, keypresses, or mouse movements. 
+    When the specified event happens, the associated function is triggered, 
+    allowing you to perform actions like updating content, validating user input, 
+    or triggering animations, making your web pages interactive and responsive to user interactions.

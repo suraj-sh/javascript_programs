@@ -1,0 +1,10 @@
+1.1 What is the DOM in the context of web development, and why is it essential for creating 
+    interactive web pages?
+
+->  The DOM, or Document Object Model, in web development is a programming interface that 
+    represents the structure and content of a web page as a tree of objects. 
+    It's essential for creating interactive web pages because it allows developers to manipulate 
+    and modify the content and structure of a web page dynamically using JavaScript. 
+    This enables actions like updating text, handling user input, and changing the appearance of 
+    web elements without needing to reload the entire page, leading to a smoother and more engaging 
+    user experience.

@@ -1,0 +1,37 @@
+<!-- Task 4: Create a toggle switch functionality using the addEventListener method. 
+     When a button is clicked, it should toggle the visibility of a specific element on and off. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Switch</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle Element</button>
+    <div id="elementToToggle" class="hidden">
+        This element can be toggled on and off.
+    </div>
+
+    <script>
+        // Get references to the button and the element to toggle
+        const toggleButton = document.getElementById("toggleButton");
+        const elementToToggle = document.getElementById("elementToToggle");
+
+        // Add an event listener to the button
+        toggleButton.addEventListener("click", function () {
+            // Toggle the visibility by adding/removing the 'hidden' class
+            if (elementToToggle.classList.contains("hidden")) {
+                elementToToggle.classList.remove("hidden");
+            } 
+            else {
+                elementToToggle.classList.add("hidden");
+            }
+        });
+    </script>
+</body>
+</html>

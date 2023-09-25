@@ -1,0 +1,8 @@
+2.1 How does the createElement method work in the DOM, and what is its purpose?
+
+->  The `createElement` method in the DOM is used to create a new HTML element in memory. 
+    It takes the name of the element (e.g., "div" for a `<div>` element) as its argument 
+    and returns a reference to the newly created element. 
+    This method is essential for dynamically generating and adding HTML elements to a web 
+    page using JavaScript, allowing developers to create interactive and dynamic web content 
+    on the fly.

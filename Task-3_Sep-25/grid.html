@@ -1,0 +1,51 @@
+<!-- 4.2  Write JavaScript code to create a grid of 4x4 square elements, where each square has 
+    a unique ID and a distinct background color. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid of Squares</title>
+    <style>
+        /* Style for the grid container */
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            margin: 20px;
+        }
+
+        /* Style for the individual squares */
+        .square {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-container"></div>
+
+    <script>
+        // Function to generate a random color
+        function getRandomColor() {
+            return '#' + (Math.random().toString(16).substring(2,8));
+        }
+
+        // Create a 4x4 grid
+        const gridContainer = document.getElementById('grid-container');
+        for (let i = 0; i < 16; i++) {
+            const square = document.createElement('div');
+            square.className = 'square';
+            square.textContent = i + 1; // Assign a unique number to each square
+            square.style.backgroundColor = getRandomColor(); // Assign a random background color
+            square.id = 'square' + (i + 1); // Assign a unique ID
+            gridContainer.appendChild(square);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+1.2 Explain the steps you would take to set up a web developer environment to start coding JavaScript.
+
+->  To set up a web developer environment for coding JavaScript:
+
+    1. Choose a Text Editor or Integrated Development Environment (IDE): 
+        Pick a code editor like Visual Studio Code, Sublime Text, or an IDE like WebStorm.
+
+    2. Install a Web Browser: 
+        Use a modern web browser like Chrome, Firefox, or Edge for testing and debugging.
+
+    3. Install Node.js (Optional): 
+        If you plan to work with server-side JavaScript or use build tools, installing Node.js is recommended.
+
+    4. Create a Project Folder: 
+        Organize your project files in a dedicated folder on your computer.
+
+    5. Write HTML: 
+        Create an HTML file (e.g., index.html) to structure your web page.
+
+    6. Write JavaScript: 
+        Create a JavaScript file (e.g., script.js) and link it to your HTML file using `<script>` tags.
+
+    7. Open in Browser: 
+        Open your HTML file in your chosen web browser to see your JavaScript code in action.

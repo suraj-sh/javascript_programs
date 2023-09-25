@@ -1,0 +1,62 @@
+<!-- Task 3: Build a simple form dynamically using JavaScript DOM. 
+    The form should have input fields for a name, email, and message, along with a submit button. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+</head>
+<body>
+    <div id="form-container">
+        <!-- The form will be created here -->
+    </div>
+
+    <script>
+        // Create the form element
+        const form = document.createElement('form');
+
+        // Create the Name input field
+        const nameLabel = document.createElement('label');
+        nameLabel.textContent = 'Name: ';
+        const nameInput = document.createElement('input');
+        nameInput.setAttribute('type', 'text');
+        nameInput.setAttribute('name', 'name');
+        nameLabel.appendChild(nameInput);
+
+        // Create the Email input field
+        const emailLabel = document.createElement('label');
+        emailLabel.textContent = 'Email: ';
+        const emailInput = document.createElement('input');
+        emailInput.setAttribute('type', 'email');
+        emailInput.setAttribute('name', 'email');
+        emailLabel.appendChild(emailInput);
+
+        // Create the Message input field
+        const messageLabel = document.createElement('label');
+        messageLabel.textContent = 'Message: ';
+        const messageInput = document.createElement('textarea');
+        messageInput.setAttribute('name', 'message');
+        messageLabel.appendChild(messageInput);
+
+        // Create the Submit button
+        const submitButton = document.createElement('input');
+        submitButton.setAttribute('type', 'submit');
+        submitButton.setAttribute('value', 'Submit');
+
+        // Add the form elements to the form
+        form.appendChild(nameLabel);
+        form.appendChild(document.createElement('br'));
+        form.appendChild(emailLabel);
+        form.appendChild(document.createElement('br'));
+        form.appendChild(messageLabel);
+        form.appendChild(document.createElement('br'));
+        form.appendChild(submitButton);
+
+        // Add the form to the container in the HTML
+        const formContainer = document.getElementById('form-container');
+        formContainer.appendChild(form);
+    </script>
+</body>
+</html>
