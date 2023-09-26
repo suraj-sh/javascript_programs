@@ -1,0 +1,8 @@
+13. Write a loop that uses the entries method to log the index and corresponding 
+    value of each element in an array.
+
+->  const colors = ['red', 'green', 'blue'];
+
+    for (const [index, value] of colors.entries()) {
+        console.log(`Index: ${index}, Value: ${value}`);
+    }

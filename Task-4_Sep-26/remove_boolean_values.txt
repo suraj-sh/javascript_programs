@@ -1,0 +1,10 @@
+3.  Describe how you would remove all empty or falsy values from an array using array methods.
+
+->  To remove all empty or falsy values from an array using array methods, 
+    we can use the `filter()` method in JavaScript:
+
+    const newArray = originalArray.filter(Boolean);
+
+
+    This code creates a new array (`newArray`) that contains only the truthy values from the 
+    original array (`originalArray`).

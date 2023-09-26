@@ -1,0 +1,7 @@
+4.  Create a loop that iterates through an array of names and logs each name to the console.
+
+->  const names = ['A', 'B', 'C', 'D'];
+
+    for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+    }

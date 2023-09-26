@@ -1,0 +1,7 @@
+8.  Explain the purpose of the map method for arrays and how it differs from other array methods.
+
+->  The purpose of the `map` method for arrays in JavaScript is to create a new array by 
+    applying a function to each element of the original array. It differs from other array 
+    methods in that it doesn't modify the original array but instead returns a new array with 
+    the results of the applied function. This makes it useful for transforming or mapping values 
+    from one array to another, maintaining immutability and data integrity.

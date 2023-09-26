@@ -1,0 +1,28 @@
+15. Explain the callback function structure required by the filter method and how it 
+    determines whether an element is included in the filtered array.
+
+->  The callback function structure required by the `filter` method takes one argument 
+    (usually named `element`, `item`, or `value`) representing each element in the array. 
+    It should return a Boolean value (`true` or `false`). If the callback returns `true`, 
+    the element is included in the filtered array; if it returns `false`, the element is excluded.
+
+    Here's an example:
+
+        const numbers = [1, 2, 3, 4, 5];
+
+        const filteredNumbers = numbers.filter(function(element) {
+            return element % 2 !== 0; // Keep only odd numbers
+        });
+
+        console.log(filteredNumbers); // Output: [1, 3, 5]
+
+    In this code:
+
+        - The `filter` method is used on the `numbers` array.
+        - The callback function `(element) => element % 2 !== 0` 
+          checks if each element is not divisible evenly by 2 (i.e., if it's an odd number).
+        - If the callback returns `true` for an element, 
+          that element is included in the `filteredNumbers` array; otherwise, it's excluded.
+
+    In this example, the callback function determines which elements to keep in the filtered array
+    based on whether they are odd or even.

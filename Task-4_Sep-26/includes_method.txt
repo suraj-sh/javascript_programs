@@ -1,0 +1,28 @@
+16. Create a function that checks if a specific value exists in an array using the 
+    includes method and returns a corresponding message.
+
+->  JavaScript function that checks if a specific value exists in an array using the `includes` 
+    method and returns a corresponding message:
+
+
+        function checkValueInArray(arr, value) {
+            if (arr.includes(value)) {
+                return `${value} exists in the array.`;
+            } 
+            else {
+                return `${value} does not exist in the array.`;
+            }
+        }
+
+    // Example usage:
+        const fruits = ['apple', 'banana', 'cherry'];
+        const searchValue = 'banana';
+
+        console.log(checkValueInArray(fruits, searchValue)); // Output: "banana exists in the array."
+
+    In this function:
+
+    - `arr` is the array in which you want to check for the value.
+    - `value` is the specific value you want to check for.
+    - The `includes` method is used to determine if the `value` exists in the `arr`.
+    - The function returns a message indicating whether the `value` exists or not in the array.

@@ -1,0 +1,20 @@
+5.  Explain the differences between using a for loop, a for...of loop, and the forEach 
+    method to loop through arrays.  
+
+->  1. For Loop:
+        - Traditional loop structure with `for` keyword.
+        - Provides fine-grained control over iteration.
+        - Requires manual indexing and bounds checking.
+        - Suitable for more complex looping scenarios.
+
+    2. For...of Loop:
+        - Modern loop introduced in ES6.
+        - Iterates over values directly without the need for indexing.
+        - Easier and cleaner syntax for simple array iteration.
+        - Doesn't provide index or access to the original array.
+
+    3. forEach Method:
+        - Array method designed for simple iteration.
+        - Automatically iterates over each element in the array.
+        - Cleaner and more concise for basic looping needs.
+        - Provides a callback function for each iteration, but doesn't return a new array.

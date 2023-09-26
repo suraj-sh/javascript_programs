@@ -1,0 +1,28 @@
+10. Describe how to concatenate two arrays using the concat method and the spread operator (...).
+
+->  Concatenating two arrays in JavaScript using both the `concat` method and the spread operator 
+    (`...`) as follows:
+
+    Using the `concat` method:
+
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+
+        const concatenatedArray = array1.concat(array2);
+
+        console.log(concatenatedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+    In this example, we use the `concat` method to merge `array1` and `array2` into `concatenatedArray`.
+
+
+    Using the spread operator:
+
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+
+        const concatenatedArray = [...array1, ...array2];
+
+        console.log(concatenatedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+    Here, we use the spread operator (`...`) to spread the elements of both `array1` and `array2` 
+    inside a new array, `concatenatedArray`. This achieves the same result as the `concat` method.

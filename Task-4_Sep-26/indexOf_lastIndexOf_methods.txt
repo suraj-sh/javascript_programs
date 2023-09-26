@@ -1,0 +1,28 @@
+17. Provide examples of using the indexOf and lastIndexOf methods to find the index of 
+    a particular element in an array.
+
+->  Examples of using the `indexOf` and `lastIndexOf` methods to find the index of a particular 
+    element in an array:
+
+    Using `indexOf`:
+        
+        const fruits = ['apple', 'banana', 'cherry', 'banana'];
+
+        const indexOfBanana = fruits.indexOf('banana');
+        console.log(indexOfBanana); // Output: 1 (index of the first occurrence)
+    
+
+    In this example, `indexOf('banana')` returns `1` because it finds the first occurrence of 
+    'banana' in the array at index 1.
+
+
+    Using `lastIndexOf`:
+    
+        const fruits = ['apple', 'banana', 'cherry', 'banana'];
+
+        const lastIndexOfBanana = fruits.lastIndexOf('banana');
+        console.log(lastIndexOfBanana); // Output: 3 (index of the last occurrence)
+    
+
+    Here, `lastIndexOf('banana')` returns `3` because it finds the last occurrence of 'banana' 
+    in the array at index 3.

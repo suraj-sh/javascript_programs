@@ -1,0 +1,36 @@
+6.  Provide examples of using the push, pop, shift, and unshift methods to manipulate array elements.
+
+->  Using `push`, `pop`, `shift`, and `unshift` methods to manipulate array elements in JavaScript:
+
+    1. push: Adds one or more elements to the end of an array.
+
+        const fruits = ['apple', 'banana', 'cherry'];
+        fruits.push('date', 'elderberry');
+        console.log(fruits); // Output: ['apple', 'banana', 'cherry', 'date', 'elderberry']
+
+
+    2. pop: Removes and returns the last element of an array.
+
+        const fruits = ['apple', 'banana', 'cherry'];
+        const removedFruit = fruits.pop();
+        console.log(removedFruit); // Output: 'cherry'
+        console.log(fruits); // Output: ['apple', 'banana']
+
+
+    3. shift: Removes and returns the first element of an array.
+
+        const fruits = ['apple', 'banana', 'cherry'];
+        const removedFruit = fruits.shift();
+        console.log(removedFruit); // Output: 'apple'
+        console.log(fruits); // Output: ['banana', 'cherry']
+
+
+    4. unshift: Adds one or more elements to the beginning of an array.
+
+        const fruits = ['banana', 'cherry'];
+        fruits.unshift('apple', 'date');
+        console.log(fruits); // Output: ['apple', 'date', 'banana', 'cherry']
+
+
+    These methods allow you to manipulate the contents of arrays by adding or removing 
+    elements at either end.

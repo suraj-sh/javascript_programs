@@ -1,0 +1,13 @@
+12. Walk through an example of using the entries method to iterate through the index-value 
+    pairs of an array.
+
+->  const fruits = ['apple', 'banana', 'cherry'];
+
+    // Using the entries method to create an iterator
+    const entriesIterator = fruits.entries();
+
+    // Iterating through the entries using a for...of loop
+    for (const entry of entriesIterator) {
+        const [index, value] = entry; // Destructure the entry into index and value
+        console.log(`Index: ${index}, Value: ${value}`);
+    }
