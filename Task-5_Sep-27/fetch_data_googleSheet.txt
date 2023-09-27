@@ -1,0 +1,27 @@
+4.  How can JavaScript be used to fetch data from a Google Sheet using AJAX? 
+    Outline the steps.
+
+->  To use JavaScript to fetch data from a Google Sheet using AJAX:
+
+    Construct the URL for the Google Sheets API, including the sheet ID and query parameters.
+    Use AJAX (e.g., fetch or XMLHttpRequest) to send a GET request to the API URL.
+    Handle the response, typically in JSON format, and parse it into JavaScript objects 
+    for further processing.
+    Using AJAX to Retrieve and Process Google Sheet Data:
+    
+    Here's a function that fetches data from a Google Sheet and converts the response text into 
+    a JavaScript object using fetch:
+
+        function fetchDataFromGoogleSheet() {
+            const sheetURL = 'YOUR_GOOGLE_SHEET_API_URL';
+
+            fetch(sheetURL)
+                .then((response) => response.json()) // Convert response to JSON
+                .then((data) => {
+                // Process and use the data here
+                console.log(data);
+                })
+                .catch((error) => {
+                console.error('Error fetching data:', error);
+                });
+        }

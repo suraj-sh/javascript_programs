@@ -1,0 +1,45 @@
+5.  Write a function in JavaScript that uses AJAX to retrieve data from a Google Sheet and 
+    convert the response text into a JavaScript object.
+
+->  To retrieve data from a Google Sheet using AJAX and convert the response text into a JavaScript object, 
+    you can use the `fetch` API, which is a modern way to make HTTP requests. Additionally, 
+    Google Sheets provides an API endpoint for retrieving data in JSON format.
+
+    Here's a JavaScript function that demonstrates how to do this:
+
+        function fetchDataFromGoogleSheet() {
+        // Replace 'YOUR_GOOGLE_SHEET_URL' with the URL of your Google Sheet (Make sure it's published to the web)
+        const sheetURL = 'YOUR_GOOGLE_SHEET_URL';
+
+        // Use the fetch API to send a GET request to the Google Sheets URL
+        fetch(sheetURL)
+            .then((response) => {
+            // Check if the response status is OK (200)
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            // Parse the response as JSON and return it
+            return response.json();
+            })
+            .then((data) => {
+            // 'data' now contains the Google Sheet data as a JavaScript object
+            console.log(data);
+            
+            // You can process and work with the data here
+            })
+            .catch((error) => {
+            console.error('Error fetching data:', error);
+            });
+        }
+
+        // Call the function to retrieve data from the Google Sheet
+        fetchDataFromGoogleSheet();
+
+
+        Replace `'YOUR_GOOGLE_SHEET_URL'` with the URL of your Google Sheet (make sure it's published to the web). 
+        This code will send a GET request to the Google Sheets URL, and when the data is received, 
+        it will be parsed as JSON and made available as a JavaScript object in the `data` variable. 
+        You can then process and work with the data as needed in the `.then` block.
+
+    Make sure to handle errors appropriately, as shown in the code, to provide better error handling 
+    in your application.

@@ -1,0 +1,39 @@
+<!-- 1. Imagine you have a Google Sheet containing a list of products. 
+    Write a JavaScript function that fetches the products' data using AJAX and displays it on a webpage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+    <div id="product-list"></div>
+
+    <script>
+        function fetchProductData() {
+            // Replace 'YOUR_GOOGLE_SHEET_URL' with the URL of your published Google Sheet.
+            const sheetURL = 'YOUR_GOOGLE_SHEET_URL';
+
+            fetch(sheetURL)
+                .then((response) => response.json())
+                .then((data) => {
+                    // Process and format the data for display
+                    const productList = document.getElementById('product-list');
+                    productList.innerHTML = '<h2>Product List:</h2>';
+                    
+                    data.forEach((product) => {
+                        productList.innerHTML += `<p>${product.ProductName}: $${product.Price}</p>`;
+                    });
+                })
+                .catch((error) => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+
+        // Call the function to fetch and display product data
+        fetchProductData();
+    </script>
+</body>
+</html>

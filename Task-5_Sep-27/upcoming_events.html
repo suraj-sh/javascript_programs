@@ -1,0 +1,48 @@
+<!-- 2. You want to build a web page that showcases upcoming events stored in a Google Sheet. 
+    How would you use JavaScript to retrieve and display this information on your site? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <style>
+        /* Add your CSS styles here to format the page as needed */
+        #events-container {
+            margin: 20px;
+        }
+        h3 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    <div id="events-container"></div>
+
+    <script>
+        const eventsContainer = document.getElementById('events-container');
+
+        fetch('YOUR_GOOGLE_SHEET_URL') // Replace 'YOUR_GOOGLE_SHEET_URL' with the URL of your published Google Sheet
+            .then((response) => response.json())
+            .then((data) => {
+                // Process the data and format it for display
+                data.forEach((event) => {
+                    const eventElement = document.createElement('div');
+                    eventElement.innerHTML = `
+                        <h3>${event.EventName}</h3>
+                        <p>Date: ${event.Date}</p>
+                        <p>Location: ${event.Location}</p>
+                        <p>Description: ${event.Description}</p>
+                    `;
+                    eventsContainer.appendChild(eventElement);
+                });
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
+    </script>
+</body>
+</html>
+    

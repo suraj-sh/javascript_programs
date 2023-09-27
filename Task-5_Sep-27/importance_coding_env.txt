@@ -1,0 +1,8 @@
+2.  Explain the importance of setting up a coding environment before starting to code, 
+    and list a few elements of a typical coding environment.
+
+->  Setting up a coding environment is crucial because it provides a controlled space for writing, 
+    testing, and running code. A typical coding environment includes a code editor, 
+    a browser for testing web applications, and relevant software or libraries for the 
+    chosen programming language. It ensures that code is written and executed efficiently, 
+    reducing errors and enhancing productivity.

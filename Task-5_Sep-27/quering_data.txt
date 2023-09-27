@@ -1,0 +1,45 @@
+11. Describe the process of querying specific data from a Google Sheet using JavaScript code.
+
+->  Querying specific data from a Google Sheet using JavaScript code involves several steps:
+
+    1. Prepare Your Google Sheet:
+    - Create a Google Sheet with the data you want to query.
+    - Ensure that the sheet is published to the web. You can do this by going to "File" -> "Publish to the web" and selecting the sheet.
+
+    2. Obtain the Google Sheet URL:
+    - Copy the URL of the published Google Sheet. This URL will be used to fetch the data.
+
+    3. Write JavaScript Code:
+    - In your HTML document, include a `<script>` tag to write JavaScript code.
+    - Use AJAX (e.g., `fetch` or `XMLHttpRequest`) to send a GET request to the Google Sheets URL.
+
+    
+    const sheetURL = 'YOUR_GOOGLE_SHEET_URL';
+
+    fetch(sheetURL)
+        .then((response) => response.json())
+        .then((data) => {
+        // Handle the response data here
+        console.log(data);
+        })
+        .catch((error) => {
+        console.error('Error fetching data:', error);
+        });
+    
+
+    4. Parse and Process the Data:
+    - In the `.then` block, parse the response data. Google Sheets typically returns data in JSON format.
+    - Once parsed, you can access and manipulate the data as needed.
+
+    5. Filter and Query the Data:
+    - Use JavaScript to filter and query the data based on your specific criteria. For example, you can iterate through the data and select rows that match certain conditions.
+
+    
+    const filteredData = data.filter((row) => row.Category === 'Electronics');
+    console.log(filteredData);
+    
+
+    6. Display or Use the Results:
+    - You can display the queried data on your web page by updating the HTML elements or use it for other purposes in your application.
+
+    The above steps outline the process of querying specific data from a Google Sheet using JavaScript code. You can adapt this process to your specific use case, including more complex queries and data processing as needed.

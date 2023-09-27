@@ -1,0 +1,7 @@
+1.  What is the purpose of an introductory section in a coding course, 
+    and how does it benefit learners?
+
+->  The introductory section in a coding course serves to provide context, 
+    motivation, and an overview of what learners can expect from the course. 
+    It benefits learners by setting clear expectations, sparking interest, 
+    and establishing a foundation for the upcoming learning journey.

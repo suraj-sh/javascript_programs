@@ -1,0 +1,6 @@
+3.  Describe the process of setting up Google Sheets for data storage and sharing in 
+    a web development project.
+
+->  To set up Google Sheets for data storage and sharing, create a new Google Sheet, 
+    input and structure your data, and then share it with the necessary permissions. 
+    You can access the sheet using its URL, making it accessible for web development projects.

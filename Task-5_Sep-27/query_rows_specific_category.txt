@@ -1,0 +1,42 @@
+12. Write a function that queries a Google Sheet to retrieve rows with a specific category 
+    and returns them as a JavaScript object.
+
+->  Here's a JavaScript function that queries a Google Sheet to retrieve rows with a specific category 
+    and returns them as a JavaScript object:
+
+    function queryGoogleSheetByCategory(category) {
+    // Replace 'YOUR_GOOGLE_SHEET_URL' with the URL of your published Google Sheet.
+    const sheetURL = 'YOUR_GOOGLE_SHEET_URL';
+
+    return fetch(sheetURL)
+        .then((response) => response.json())
+        .then((data) => {
+        // Filter the data based on the 'Category' column
+        const filteredData = data.filter((row) => row.Category === category);
+        return filteredData;
+        })
+        .catch((error) => {
+        console.error('Error fetching data:', error);
+        return []; // Return an empty array in case of an error
+        });
+    }
+
+    // Example usage:
+    queryGoogleSheetByCategory('Electronics')
+    .then((result) => {
+        // 'result' contains an array of rows with the 'Electronics' category
+        console.log(result);
+    });
+
+    In this function:
+
+    1. Replace `'YOUR_GOOGLE_SHEET_URL'` with the URL of your published Google Sheet.
+
+    2. The function sends a GET request to the Google Sheets URL, retrieves the data, and parses it as JSON.
+
+    3. It then filters the data based on the specified category using the `filter` method.
+
+    4. The filtered data is returned as a JavaScript object (an array of rows) in the form of a promise.
+
+    You can call this function with the desired category, and it will return the rows from the Google Sheet 
+    that match that category as a JavaScript object, which you can then use in your application.

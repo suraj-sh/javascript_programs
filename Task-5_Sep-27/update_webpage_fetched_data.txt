@@ -1,0 +1,38 @@
+10. Write a code snippet that demonstrates how to update a webpage with data fetched from 
+    a Google Sheet using JavaScript.
+
+->  Code snippet that demonstrates how to update a webpage with data fetched from a Google 
+    Sheet using JavaScript:
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Sheet Data</title>
+    </head>
+    <body>
+        <div id="data-container"></div>
+
+        <script>
+            const dataContainer = document.getElementById('data-container');
+
+            fetch('YOUR_GOOGLE_SHEET_URL')
+                .then((response) => response.json())
+                .then((data) => {
+                    // Process and format the data (e.g., create HTML elements)
+                    const formattedData = data.map((item) => `<p>${item.Name}: ${item.Age}</p>`).join('');
+
+                    // Update the HTML element with the formatted data
+                    dataContainer.innerHTML = formattedData;
+                })
+                .catch((error) => {
+                    console.error('Error fetching data:', error);
+                });
+        </script>
+    </body>
+    </html>
+
+    Replace `'YOUR_GOOGLE_SHEET_URL'` with the URL of your published Google Sheet. 
+    When you open this HTML file in a web browser, it will fetch data from the Google Sheet 
+    and display it in the `data-container` div on your webpage.

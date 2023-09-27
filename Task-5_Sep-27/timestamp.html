@@ -1,0 +1,63 @@
+<!-- 3. Create a JavaScript function that queries a Google Sheet to find and display 
+    all entries with a timestamp newer than a given date. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entries Newer Than Date</title>
+    <style>
+        /* Add your CSS styles here to format the page as needed */
+        #entries-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entries Newer Than Date</h1>
+    <div id="entries-container"></div>
+
+    <script>
+        function displayEntriesNewerThanDate(targetDate) {
+            // Replace 'YOUR_GOOGLE_SHEET_URL' with the URL of your published Google Sheet.
+            const sheetURL = 'YOUR_GOOGLE_SHEET_URL';
+
+            fetch(sheetURL)
+                .then((response) => response.json())
+                .then((data) => {
+                    // Filter the data based on the timestamp column (assuming it's named 'Timestamp')
+                    const filteredData = data.filter((entry) => {
+                        const entryDate = new Date(entry.Timestamp); // Assuming the timestamp is in a format parseable as a date
+                        return entryDate > targetDate;
+                    });
+
+                    // Display the filtered entries
+                    const entriesContainer = document.getElementById('entries-container');
+                    entriesContainer.innerHTML = '<h2>Entries Newer Than ' + targetDate.toLocaleString() + ':</h2>';
+                    
+                    if (filteredData.length === 0) {
+                        entriesContainer.innerHTML += '<p>No entries found.</p>';
+                    } else {
+                        filteredData.forEach((entry) => {
+                            const entryElement = document.createElement('div');
+                            entryElement.innerHTML = `
+                                <p>Timestamp: ${entry.Timestamp}</p>
+                                <p>Data: ${entry.Data}</p>
+                            `;
+                            entriesContainer.appendChild(entryElement);
+                        });
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+
+        // Example usage:
+        const targetDate = new Date('2023-12-31'); // Replace with your desired date
+        displayEntriesNewerThanDate(targetDate);
+    </script>
+</body>
+</html>
+    

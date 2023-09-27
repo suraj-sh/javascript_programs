@@ -1,0 +1,25 @@
+8.  Give an example of how you would use JavaScript code to convert Google Sheet data 
+    into a JavaScript object.
+
+->  Example of how you can use JavaScript code to convert Google Sheet data into a JavaScript object. 
+    In this example, we assume that you have fetched data from a Google Sheet using AJAX, 
+    and the data is in JSON format.
+
+        // Sample Google Sheet data in JSON format (simulating data retrieved via AJAX)
+        const googleSheetData = '[{"Name": "Suraj", "Age": 23}, {"Name": "Sunny", "Age": 25}]';
+
+        // Parse the JSON data into a JavaScript object
+        const javascriptObject = JSON.parse(googleSheetData);
+
+        // Now, 'javascriptObject' contains the data as a JavaScript object
+        console.log(javascriptObject);
+
+        // You can access and manipulate the data like this:
+        console.log(javascriptObject[0].Name); // Outputs: "John"
+        console.log(javascriptObject[1].Age); // Outputs: 25
+
+
+    In this example, we first receive Google Sheet data in JSON format (simulated as a string), 
+    and then we use `JSON.parse()` to convert it into a JavaScript object (`javascriptObject`). 
+    Once it's in the JavaScript object form, you can easily access and manipulate the data as needed 
+    for your web application.
