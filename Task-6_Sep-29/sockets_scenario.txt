@@ -1,0 +1,9 @@
+16. Describe a scenario where socket communication could be advantageous in a web application.
+
+->  Scenario:   In a collaborative online whiteboard application, 
+                socket communication is advantageous. 
+                When one user draws or adds an element on the whiteboard, 
+                the changes need to be instantly reflected on the screens of all 
+                other users in the same session. Sockets enable real-time updates, 
+                allowing all users to see the drawing as it happens, creating a seamless 
+                and collaborative experience.

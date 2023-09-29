@@ -1,0 +1,26 @@
+15. What are sockets in the context of web development, and why are they used?
+
+->  Sockets in web development are a communication technology that allows real-time, 
+    two-way communication between a web browser (client) and a web server. 
+    They are used to enable instant data exchange without the need for the client to 
+    repeatedly request information from the server.
+
+    Here's why sockets are used:
+
+    1. Real-Time Interaction: Sockets enable real-time interactions, such as chat applications, 
+                              online gaming, or collaborative tools, where updates are immediately sent 
+                              and received, creating a more interactive user experience.
+
+    2. Efficiency: Unlike traditional HTTP requests, which are one-way (client to server), 
+                   sockets enable bidirectional communication, reducing the overhead of repeatedly 
+                   polling the server for updates.
+
+    3. Push Notifications: Sockets are used to send push notifications to clients, allowing servers to 
+                           inform clients about events or changes without the client having to request updates.
+
+    4. Live Updates: They power live updates in web applications, like stock market tickers, live sports scores, 
+                     or social media feeds, ensuring users see the latest information as it happens.
+
+    In summary, sockets in web development provide a mechanism for real-time, efficient, 
+    and interactive communication between clients and servers, enabling a wide range of dynamic 
+    and engaging web applications.

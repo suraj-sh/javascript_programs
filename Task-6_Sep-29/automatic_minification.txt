@@ -1,0 +1,94 @@
+Practical Task 1:   You're working on a project that requires the automatic minification of both CSS and 
+                    JavaScript files whenever changes are detected. How would you set up Grunt to handle this?
+
+->  To set up Grunt to automatically minify CSS and JavaScript files whenever changes are detected in a project, 
+    you'll need to follow these steps:
+
+    1. Install Grunt and Required Plugins:
+        - Make sure you have Node.js and npm (Node Package Manager) installed.
+        - Create a `package.json` file for your project (if you don't already have one) by running
+          `npm init` and following the prompts.
+        - Install Grunt and the necessary Grunt plugins (such as `grunt-contrib-cssmin` for CSS and 
+          `grunt-contrib-uglify` for JavaScript) as dev dependencies:
+    
+    npm install grunt grunt-contrib-cssmin grunt-contrib-uglify --save-dev
+    
+    2. Create a Gruntfile:
+        - Create a `Gruntfile.js` in your project's root directory. This file will define your 
+          Grunt configuration and tasks.
+     
+        module.exports = function(grunt) {
+            grunt.initConfig({
+            cssmin: {
+                target: {
+                files: {
+                    'dist/style.min.css': ['src/*.css']
+                }
+                }
+            },
+            uglify: {
+                target: {
+                files: {
+                    'dist/script.min.js': ['src/*.js']
+                }
+                }
+            }
+            });
+
+            grunt.loadNpmTasks('grunt-contrib-cssmin');
+            grunt.loadNpmTasks('grunt-contrib-uglify');
+
+            grunt.registerTask('default', ['cssmin', 'uglify']);
+        };
+    
+    In this example, we've configured Grunt to minify CSS files in the `src` directory and save the 
+    minified output as `style.min.css` in the `dist` directory. Similarly, it minifies JavaScript 
+    files from `src` and saves them as `script.min.js` in `dist`.
+
+    3. Run Grunt:
+        - Open your terminal and run the `grunt` command to execute the default task:
+
+        grunt    
+
+    Grunt will watch for changes in your CSS and JavaScript files and automatically minify them whenever 
+    you save changes.
+
+    4. Customize the Watch Task (Optional):
+        - You can enhance the Grunt configuration to automatically watch for changes by using the 
+          `grunt-contrib-watch` plugin. 
+          Install it:
+
+        npm install grunt-contrib-watch --save-dev
+    
+    - Update your `Gruntfile.js` to include the watch task:
+ 
+        module.exports = function(grunt) {
+            grunt.initConfig({
+            // ... (previous configuration)
+
+            watch: {
+                scripts: {
+                files: ['src/*.js'],
+                tasks: ['uglify'],
+                options: {
+                    spawn: false,
+                },
+                },
+                styles: {
+                files: ['src/*.css'],
+                tasks: ['cssmin'],
+                options: {
+                    spawn: false,
+                },
+                },
+            },
+            });
+
+            grunt.loadNpmTasks('grunt-contrib-watch');
+
+            grunt.registerTask('default', ['cssmin', 'uglify', 'watch']);
+        };
+    
+
+    With this setup, Grunt will continuously watch for changes in your CSS and JavaScript files and 
+    trigger the minification tasks automatically when changes are detected. 

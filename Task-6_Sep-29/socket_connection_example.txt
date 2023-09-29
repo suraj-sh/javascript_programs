@@ -1,0 +1,55 @@
+18. Write JavaScript code to establish a socket connection and emit a "message" 
+    event with a specific message payload.
+
+->  To establish a socket connection and emit a "message" event with a specific message payload in JavaScript, 
+    you can use the Socket.io library, which simplifies WebSocket communication. 
+    Here's an example of how to do it:
+
+    First, make sure you have Socket.io installed in your project. You can install it via npm:
+
+        npm install socket.io-client
+    
+    Next, you can use the following code on the client-side to establish a socket connection and emit 
+    a "message" event:
+
+        // Import the Socket.io client library
+        const io = require('socket.io-client');
+
+        // Replace 'http://localhost:3000' with your server's URL
+        const socket = io.connect('http://localhost:3000');
+
+        // Emit a "message" event with a specific payload
+        const messagePayload = {
+        username: 'John',
+        text: 'Hello, world!',
+        };
+
+        socket.emit('message', messagePayload);
+
+        // Listen for server responses or other events (if needed)
+        socket.on('response', (data) => {
+        console.log('Server responded:', data);
+        });
+
+        // Handle disconnect events (if needed)
+        socket.on('disconnect', () => {
+        console.log('Disconnected from the server.');
+        });
+        
+
+    In this code:
+
+    1. You import the Socket.io client library.
+
+    2. You establish a socket connection to the server by providing the server's URL 
+        (replace `'http://localhost:3000'` with your server's actual URL).
+
+    3. You emit a "message" event with a specific payload (`messagePayload` in this case).
+
+    4. You can also listen for server responses or other events using `socket.on()`.
+
+    5. You handle the disconnect event if needed.
+
+    Remember to replace the server URL with the actual URL of your server. 
+    On the server-side, you would need to set up a corresponding listener for the "message" 
+    event to handle the incoming message and respond accordingly.

@@ -1,0 +1,25 @@
+14. Write a CoffeeScript function that accepts a name parameter and returns a greeting message 
+    using string interpolation.
+
+->  CoffeeScript function that accepts a `name` parameter and returns a greeting message using 
+    string interpolation:
+
+        greet = (name) ->
+        return "Hello, #{name}!"
+
+        # Example usage:
+        result = greet("John")
+        console.log(result)  # Output: "Hello, John!"
+
+
+    In this CoffeeScript code:
+
+    - We define a function called `greet` that takes a `name` parameter.
+
+    - Inside the function, we use string interpolation with `#{}` to insert the `name` 
+      parameter into the greeting message.
+
+    - We return the greeting message.
+
+    - Finally, we demonstrate how to use the `greet` function by calling it with `greet("John")` 
+      and logging the result to the console. The result is "Hello, John!"

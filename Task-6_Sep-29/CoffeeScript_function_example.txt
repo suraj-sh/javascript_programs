@@ -1,0 +1,21 @@
+11. Write a simple CoffeeScript function that takes two numbers as parameters and returns their sum.
+
+->  CoffeeScript function that takes two numbers as parameters and returns their sum:
+
+    add = (num1, num2) ->
+    return num1 + num2
+
+    # Example usage:
+    result = add(5, 3)
+    console.log(result)  # Output: 8
+
+    In this CoffeeScript code:
+
+    - We define a function called `add` that takes `num1` and `num2` as parameters.
+
+    - Inside the function, we use the `+` operator to add the two numbers together.
+
+    - We return the result of the addition.
+
+    - Finally, we demonstrate how to use the `add` function by calling it with `add(5, 3)` 
+      and logging the result to the console.

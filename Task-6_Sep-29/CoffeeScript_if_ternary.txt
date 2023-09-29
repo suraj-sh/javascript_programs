@@ -1,0 +1,52 @@
+12. Provide examples of using if statements and the ternary operator in CoffeeScript.
+
+->  Examples of using if statements and the ternary operator in CoffeeScript:
+
+    Using if Statements:
+    
+        # If statement
+        if x > 10
+        console.log("x is greater than 10")
+        else
+        console.log("x is not greater than 10")
+
+        # If-else if-else statement
+        if temperature > 30
+        console.log("It's hot outside!")
+        else if temperature > 20
+        console.log("It's warm outside.")
+        else
+        console.log("It's cold outside.")
+
+        # Unless statement (opposite of if)
+        unless isRaining
+        console.log("It's not raining, go outside!")
+
+        # Single-line if
+        console.log("Good weather") if isSunny
+    
+
+    Using the Ternary Operator:
+    
+        # Ternary operator for conditional assignment
+        result = if x > 0 then "Positive" else "Negative"
+
+        # Ternary operator for conditionally executing code
+        isWeekend = true
+        message = "Enjoy the weekend!" if isWeekend else "It's a weekday."
+
+        # Ternary operator for concise boolean assignment
+        isLoggedIn = true
+        canAccessResource = isLoggedIn ? true : false
+    
+
+    In the examples above:
+
+    - We use `if` statements to perform conditional checks and execute code blocks based on the conditions.
+
+    - The `unless` statement is the opposite of `if`, and it executes the code block when the condition is false.
+
+    - Single-line `if` statements allow for concise conditional execution of code.
+
+    - The ternary operator (`?`) is used for conditional assignment, concise conditional code execution, 
+      and boolean assignment based on conditions. It's a shorthand way to express `if-else` conditions.

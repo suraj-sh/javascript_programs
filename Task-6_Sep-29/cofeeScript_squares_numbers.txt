@@ -1,0 +1,19 @@
+Practical Task 2:   Create a CoffeeScript loop that prints out the squares of numbers from 1 to 10.
+
+->  To create a CoffeeScript loop that prints out the squares of numbers from 1 to 10, 
+    you can use a for loop. 
+    
+    Here's an example:
+
+        # Loop from 1 to 10 and print the squares
+        for i in [1..10]
+        square = i * i
+        console.log "The square of #{i} is #{square}"
+        
+    In this CoffeeScript code:
+
+    We use a for loop to iterate from 1 to 10, inclusive. [1..10] represents the range from 1 to 10.
+
+    Inside the loop, we calculate the square of the current number i using i * i.
+
+    We use console.log to print the result, including the original number and its square.

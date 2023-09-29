@@ -1,0 +1,78 @@
+Practical Task 4:   Explain how you might use Grunt to automate the process of copying changed files 
+                    from a source directory to a destination directory.
+
+->  To use Grunt to automate the process of copying changed files from a source directory to a destination 
+    directory, you can follow these steps:
+
+    1. Project Setup:
+        - Create a new directory for your project if you haven't already.
+        - Initialize a `package.json` file for your project by running `npm init`.
+        - Install Grunt and the necessary Grunt plugins as dev dependencies by running 
+        `npm install grunt grunt-contrib-copy --save-dev`. 
+        In this case, we'll use the `grunt-contrib-copy` plugin for file copying.
+
+    2. Create a Gruntfile:
+        - Create a `Gruntfile.js` in your project's root directory. This file will define your Grunt 
+        configuration and tasks.
+
+    3. Configure Grunt Copy Task:
+        - Inside your `Gruntfile.js`, configure the Grunt `copy` task to specify which files to copy 
+        from the source directory to the destination directory. 
+        For example:
+
+        module.exports = function(grunt) {
+            grunt.initConfig({
+            copy: {
+                main: {
+                expand: true,
+                src: ['src/'], // Source files to copy (e.g., all files in 'src' directory)
+                dest: 'dist/',  // Destination directory
+                },
+            },
+            });
+
+            grunt.loadNpmTasks('grunt-contrib-copy');
+
+            // Define a default task
+            grunt.registerTask('default', ['copy']);
+        };  
+
+    In this example, we use the `copy` task to copy all files and directories from the `src` directory 
+    (including subdirectories) to the `dist` directory.
+
+    4. Run the Grunt Task:
+        - Open your terminal and run the `grunt` command to execute the default task:
+
+        grunt
+
+    Grunt will copy the specified files from the source directory to the destination directory.
+
+    5. Watch for Changes (Optional):
+        - If you want Grunt to watch for changes in the source directory and automatically copy updated 
+        files, you can enhance your Grunt configuration by adding the `grunt-contrib-watch` plugin. 
+        Install it by running `npm install grunt-contrib-watch --save-dev`.
+
+        - Update your `Gruntfile.js` to include the watch task:
+
+    
+        module.exports = function(grunt) {
+            grunt.initConfig({
+            // ... (previous configuration)
+
+            watch: {
+                files: ['src/'],
+                tasks: ['copy'],
+            },
+            });
+
+            grunt.loadNpmTasks('grunt-contrib-watch');
+
+            grunt.registerTask('default', ['copy', 'watch']);
+        };
+        
+
+    With this setup, Grunt will continuously watch for changes in the source directory and copy updated 
+    files to the destination directory.
+
+    That's it! Grunt is now set up to automate the process of copying changed files from a source directory 
+    to a destination directory, making it easier to manage your project's assets or build process.

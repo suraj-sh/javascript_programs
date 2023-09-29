@@ -1,0 +1,59 @@
+2.  Explain the role of Grunt in web development and its purpose in tasks like CSS minification.
+    Write the configuration code necessary to set up Grunt for CSS minification in a project.
+
+->  Role of Grunt in Web Development:
+    Grunt is a task runner in web development that automates repetitive tasks, such as minifying CSS, 
+    JavaScript, optimizing images, and more. It helps streamline development workflows, 
+    enhance project organization, and improve code quality by automating time-consuming tasks.
+
+    Purpose of Grunt in CSS Minification:
+    One of the purposes of Grunt is to automate CSS minification. Minifying CSS involves removing 
+    unnecessary white spaces, comments, and optimizing the code to reduce its size. 
+    This results in faster page load times and improved website performance.
+
+    Here's the configuration code to set up Grunt for CSS minification in a project:
+
+    1. Project Setup and Dependencies:
+        - Create a project directory if you haven't already.
+        - Initialize a `package.json` file using `npm init`.
+        - Install Grunt and the necessary Grunt plugin for CSS minification:
+
+        npm install grunt grunt-contrib-cssmin --save-dev
+    
+    2. Create a Gruntfile:
+        - In your project directory, create a `Gruntfile.js`. This file will define your Grunt 
+          configuration and tasks.
+
+    3. Configure Grunt CSS Minification:
+        - Inside your `Gruntfile.js`, configure the Grunt `cssmin` task to specify which CSS files 
+          to minify and where to save the minified output:
+
+        module.exports = function(grunt) {
+            grunt.initConfig({
+            cssmin: {
+                target: {
+                files: {
+                    'dist/style.min.css': ['src/*.css']
+                }
+                }
+            }
+            });
+
+            grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+            grunt.registerTask('default', ['cssmin']);
+        };
+    
+    In this example, we've configured Grunt to minify all CSS files in the `src` directory and 
+    save the minified output as `style.min.css` in the `dist` directory.
+
+    4. Run the Grunt Task:
+        - Open your terminal and run the `grunt` command to execute the default task:
+
+        grunt
+    
+    Grunt will now minify the specified CSS files, and the minified output will be available in 
+    the `dist` directory.
+
+    This setup automates the process of CSS minification using Grunt in your web development project, 
+    helping improve website performance by reducing the size of your CSS files.

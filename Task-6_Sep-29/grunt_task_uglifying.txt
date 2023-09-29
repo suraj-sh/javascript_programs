@@ -1,0 +1,3 @@
+4.  Write a Grunt task configuration for uglifying multiple JavaScript files located in different directories.
+
+->  

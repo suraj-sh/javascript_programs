@@ -1,0 +1,19 @@
+10. What is CoffeeScript, and why might developers choose to use it over traditional JavaScript?
+
+->  CoffeeScript is a programming language that compiles into JavaScript. Developers might choose to 
+    use it over traditional JavaScript because:
+
+    1. Simplicity: CoffeeScript offers a more concise and readable syntax, reducing the need for 
+                   punctuation and boilerplate code, making code easier to write and maintain.
+
+    2. Cleaner Code: It generates cleaner, more human-readable JavaScript, which can enhance code 
+                     quality and reduce the chance of errors.
+
+    3. Familiarity: Developers from languages like Python or Ruby may find CoffeeScript's syntax 
+                    more familiar and comfortable.
+
+    4. Readability: CoffeeScript emphasizes code readability, helping teams collaborate more 
+                    effectively and understand codebases quickly.
+
+    5. Compatibility: CoffeeScript code compiles to standard JavaScript, ensuring compatibility 
+                      with all JavaScript libraries and platforms.

@@ -1,0 +1,12 @@
+13. Translate the following JavaScript loop into CoffeeScript: for (let i = 0; i < 5; i++) { console.log(i); }
+
+->  CoffeeScript code for the JavaScript loop:
+
+        for i in [0..4]
+        console.log(i)
+
+    In CoffeeScript:
+
+    - `for i in [0..4]` is used to create a loop that iterates from 0 to 4 (inclusive).
+
+    - `console.log(i)` is used to print the value of `i` in each iteration.
